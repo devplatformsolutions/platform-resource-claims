@@ -1,11 +1,11 @@
-apiVersion: aws.platform.example.org/v1alpha1
+apiVersion: aws.devplatform.io/v1alpha1
 kind: EKSCluster
 metadata:
   name: production-eks
   namespace: default
 spec:
   resourceRef:
-    apiVersion: aws.platform.example.org/v1alpha1
+    apiVersion: aws.devplatform.io/v1alpha1
     kind: XEKSCluster
   parameters:
     region: us-west-2
