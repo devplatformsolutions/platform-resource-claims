@@ -5,6 +5,7 @@ metadata:
   namespace: default
 spec:
   resourceRef:
+    name: prod-cluster
     apiVersion: aws.devplatform.io/v1alpha1
     kind: XEKSCluster
   parameters:
