@@ -1,0 +1,10 @@
+apiVersion: devplatform.io/v1alpha1
+kind: EC2DynamoDBInstance
+metadata:
+  name: my-composite-instance
+  annotations:
+    argocd.argoproj.io/sync-wave: "60"
+spec:
+  instanceType: t2.small           # For EC2 instance type.
+  # subnetID: subnet-04fd5b30129ffd075  # The ID of the subnet to use.
+  # tableName: my-dynamodb-table     # For the DynamoDB table.
