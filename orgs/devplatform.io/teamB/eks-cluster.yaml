@@ -2,7 +2,7 @@ apiVersion: aws.devplatform.io/v1alpha1
 kind: EKSCluster
 metadata:
   name: prod-eks-cluster
-  namespace: default
+  namespace: crossplane-system
 spec:
   # Required field as per the XRD
   region: us-west-2
