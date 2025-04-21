@@ -1,17 +1,14 @@
-apiVersion: aws.devplatform.io/v1alpha1
+apiVersion: aws.platform.example.org/v1alpha1
 kind: EKSCluster
 metadata:
-  name: prod-eks-cluster
-  namespace: crossplane-system
+  name: production-eks
+  namespace: default
 spec:
-  # Required field as per the XRD
-  region: us-west-2
-  
-  # Optional fields with defaults
-  clusterVersion: "1.28"
-  nodeSize: "t3.large"
-  nodeCount: 3
-  
-  # You can also add composition selector if you have multiple compositions
-  compositionRef:
-    name: eks.aws.devplatform.io
+  resourceRef:
+    apiVersion: aws.platform.example.org/v1alpha1
+    kind: XEKSCluster
+  parameters:
+    region: us-west-2
+    clusterVersion: "1.28"
+    nodeSize: "t3.large"
+    nodeCount: 3
