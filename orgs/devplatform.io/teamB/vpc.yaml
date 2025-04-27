@@ -2,6 +2,7 @@ apiVersion: aws.devplatforms.io/v1alpha1
 kind: VPCClaim
 metadata:
   name: my-vpc-claim
+  namespace: crossplane-system
 spec:
   parameters:
     region: us-east-1
