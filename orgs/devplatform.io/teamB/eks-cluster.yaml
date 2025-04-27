@@ -2,7 +2,7 @@ apiVersion: aws.devplatforms.io/v1alpha1
 kind: EKSCluster
 metadata:
   name: production-cluster
-  namespace: production
+  namespace: crossplane-system
 spec:
   parameters:
     region: us-west-2
