@@ -1,15 +1,11 @@
 apiVersion: aws.devplatforms.io/v1alpha1
 kind: VPCClaim
 metadata:
-  name: dev-network
+  name: my-vpc-claim
+  namespace: crossplane-system
 spec:
   parameters:
-    region: eu-north-1
+    region: us-east-1
     cidrBlock: 10.0.0.0/16
-    availabilityZones:
-      - eu-north-1a
-      - eu-north-1b
   compositionRef:
     name: vpc.aws.devplatforms.io
-  writeConnectionSecretToRef:
-    name: network-outputs
