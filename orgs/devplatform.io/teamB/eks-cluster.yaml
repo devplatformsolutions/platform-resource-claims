@@ -1,4 +1,4 @@
-apiVersion: aws.platform.example.org/v1alpha1
+apiVersion: aws.devplatforms.io/v1alpha1
 kind: EKSCluster
 metadata:
   name: production-cluster
