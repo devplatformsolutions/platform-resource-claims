@@ -1,0 +1,12 @@
+apiVersion: aws.devplatforms.io/v1alpha1
+kind: EKSCluster
+metadata:
+  name: production-cluster
+  namespace: crossplane-system
+spec:
+  parameters:
+    region: us-west-2
+    clusterVersion: "1.28"
+  writeConnectionSecretToRef:
+    name: eks-cluster-kubeconfig
+    namespace: production
