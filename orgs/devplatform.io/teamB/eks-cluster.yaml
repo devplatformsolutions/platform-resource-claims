@@ -1,15 +1,12 @@
-apiVersion: aws.devplatform.io/v1alpha1
+apiVersion: aws.platform.example.org/v1alpha1
 kind: EKSCluster
 metadata:
-  name: production-eks
-  namespace: default
+  name: production-cluster
+  namespace: production
 spec:
-  resourceRef:
-    name: prod-cluster
-    apiVersion: aws.devplatform.io/v1alpha1
-    kind: XEKSCluster
   parameters:
     region: us-west-2
     clusterVersion: "1.28"
-    nodeSize: "t3.large"
-    nodeCount: 3
+  writeConnectionSecretToRef:
+    name: eks-cluster-kubeconfig
+    namespace: production
