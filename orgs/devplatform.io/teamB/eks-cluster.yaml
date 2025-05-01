@@ -1,7 +1,7 @@
 apiVersion: aws.devplatforms.io/v1alpha1
 kind: EKSCluster
 metadata:
-  name: production-cluster
+  name: dev-cluster
   namespace: crossplane-system
 spec:
   parameters:
