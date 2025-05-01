@@ -5,8 +5,9 @@ metadata:
   namespace: crossplane-system
 spec:
   parameters:
-    region: us-west-2
     clusterVersion: "1.28"
+    region: us-east-1
+    cidrBlock: 10.0.0.0/16
   writeConnectionSecretToRef:
     name: eks-cluster-kubeconfig
     namespace: production
