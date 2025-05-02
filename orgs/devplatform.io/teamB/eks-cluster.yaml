@@ -5,7 +5,7 @@ metadata:
   namespace: crossplane-system
 spec:
   parameters:
-    clusterVersion: "1.28"
+    clusterVersion: "1.32"
     region: us-east-1
     cidrBlock: 10.0.0.0/16
   writeConnectionSecretToRef:
