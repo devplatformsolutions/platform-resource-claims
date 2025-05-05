@@ -1,4 +1,4 @@
-apiVersion: devplatform.io/v1alpha1
+apiVersion: devplatforms.io/v1alpha1
 kind: EC2DynamoDBInstance
 metadata:
   name: my-composite-instance
