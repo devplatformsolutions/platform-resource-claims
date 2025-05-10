@@ -1,5 +1,6 @@
 apiVersion: aws.devplatforms.io/v1alpha1
-kind: EKSCluster
+kind: XEKS 
+#EKSCluster
 metadata:
   name: dev-cluster
   namespace: crossplane-system
